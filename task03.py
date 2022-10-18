@@ -3,7 +3,7 @@
 # 201 ... - + 1
 
 
-def calc_dragon_age(age):
+def calc_dragon_heads(age):
     # foolproof
     if not isinstance(age, int) or age <= 0:
         return -1
@@ -21,15 +21,15 @@ def calc_dragon_age(age):
 
 
 if __name__ == "__main__":
-    assert calc_dragon_age(0) == -1
-    assert calc_dragon_age(-100) == -1
-    assert calc_dragon_age(1) == 6
-    assert calc_dragon_age(50) == 153
-    assert calc_dragon_age(150) == 403
-    assert calc_dragon_age(300) == 603
-    assert calc_dragon_age(100) == 303
-    assert calc_dragon_age(101) == 305
-    assert calc_dragon_age(200) == 503
-    assert calc_dragon_age(201) == 504
-    assert calc_dragon_age("200") == -1
-    assert calc_dragon_age(None) == -1
+    assert calc_dragon_heads(0) == -1
+    assert calc_dragon_heads(-100) == -1
+    assert calc_dragon_heads(1) == 6
+    assert calc_dragon_heads(50) == 153
+    assert calc_dragon_heads(150) == 403
+    assert calc_dragon_heads(300) == 603
+    assert calc_dragon_heads(100) == 303
+    assert calc_dragon_heads(101) == 305
+    assert calc_dragon_heads(200) == 503
+    assert calc_dragon_heads(201) == 504
+    assert calc_dragon_heads("200") == -1
+    assert calc_dragon_heads(None) == -1
