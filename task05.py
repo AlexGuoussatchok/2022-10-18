@@ -1,6 +1,9 @@
 BAD_MARK = "very bad" # именная константа
 
 def get_feedback(mark):
+    if isinstance(mark, bool) or not isinstance(mark, int) or not (1 <= mark <= 10):
+        return -1
+
     result = "Excellent mark"
     if mark <= 1:
         result = BAD_MARK
